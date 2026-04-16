@@ -1,31 +1,4 @@
 # ==============================
-# PROJECT STRUCTURE
-# ==============================
-# .env
-# main.py
-# llm.py
-# image_gen.py
-# tts.py
-# video.py
-# prompts.md
-
-#MAC
-#python3 -m venv venv
-#source venv/bin/activate
-
-#WINDOWS
-#python -m venv venv
-#venv\Scripts\activate
-
-#pip install --upgrade pip
-#pip install openai moviepy python-dotenv
-#pip install -r requirements.txt
-
-
-#FFMPEG
-#brew install ffmpeg
-
-# ==============================
 # main.py
 # ==============================
 import os
@@ -90,5 +63,5 @@ def run_pipeline(situation: str, n: int = 4):
     save_run(output_data, OUTPUT_DIR, run_id)
     
 if __name__ == "__main__":
-    number_of_scenes = 4
-    run_pipeline(situation="Benny (ein junger Mann mit blauem t shirt und braunen Haaren) fährt mit der Bahn nach Rot an der Rot zur 'Akademie Danach'. Dabei steigt er mehrfach um, ein Zug hat Verspätung, aber weil der Anschlusszug auch Verspätung hat bekommt er ihn noch. Danach wird er noch mit dem Auto mitgenommen und kommt schließlich am Kloster an und trifft viele neue Leute.", n = number_of_scenes)
+    number_of_scenes = 2
+    run_pipeline(situation="Viele Junge Leute haben eine Woche lang eine tolle Zeit und viel Spaß beim Lernen, Diskutieren, Erkunden der Natur, Gesellschaftsspielen und einem Ballabend mit Tanz.", n = number_of_scenes)
